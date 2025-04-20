@@ -56,8 +56,8 @@ def main():
 
     # 옵션 입력
     st.subheader("옵션(SKU) 입력")
-    colors_in = st.text_input("색상들 (예: Red, Blue)")
-    sizes_in = st.text_input("사이즈들 (예: S, M)")
+    colors_in = st.text_input("색상 (예: Red, Blue)")
+    sizes_in = st.text_input("사이즈 (예: S, M)")
     colors = [c.strip() for c in colors_in.split(",") if c.strip()]
     sizes = [s.strip() for s in sizes_in.split(",") if s.strip()]
     combos = [(c, s) for c in colors for s in sizes]
